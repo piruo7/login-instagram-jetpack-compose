@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.cramirez.logininstagramjetpackcompose.login.ui.LoginScreen
+import com.cramirez.logininstagramjetpackcompose.login.ui.LoginViewModel
 import com.cramirez.logininstagramjetpackcompose.ui.theme.LoginInstagramJetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +21,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    LoginScreen()
+                    LoginScreen(LoginViewModel())
                 }
             }
         }
